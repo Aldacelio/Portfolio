@@ -4,7 +4,117 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
+
+:root{
+    --font-p: "Baloo Da 2", serif;
+    --font-s: "Josefin Slab", serif;;
+    --font-t: "Mulish",serif;
+}
+
+.btn-menu{
+    /* background-color: red; */
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    z-index: 100;
+    right: 2rem;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 1s;
+}
+.show-menu .btn-menu{
+    right: 16rem;
+
+}
+.line{
+    width: 100%;
+    background-color: white;
+    height: .1rem;
+    box-shadow: 0.1rem 0.1rem 1px black;
+    transition: transform 1s;
+}
+.show-menu #line1{
+    background-color: black;
+    box-shadow: none;
+    transform: rotate(45deg) translate(.3rem, .99rem);
+    
+}
+.show-menu #line2{
+    opacity: 0;
+    visibility: hidden;
+}
+.show-menu #line3{
+    background-color: black;
+    transform: rotate(-45deg) translate(.3rem, -.99rem);
+    box-shadow: none;
+}
+
+.side-bar{
+    width: 20rem;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    transition: all 1s;
+    line-height: 4.5rem;
+}
+
+.show-menu .side-bar{
+    right: 0;
+}
+
+.menu{
+    position: absolute;
+    top:15%;
+    left: 17%;
+    transform: translateX(50%,-50%);
+}
+
+.menu-item{
+    text-align: center;
+}
+
+.menu-link{
+    font-family: var(--font-t);
+    font-size: 2rem;
+    color: #555;
+    transition: color 1s;
+}
+
+.menu-link:hover{
+    color: #6a3093;
+}
+
+.social-media{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media i{
+    color: #555;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.social-media i:hover{
+    opacity: 90%;
+}
+
 
 header{
     width: 100%;
@@ -37,9 +147,9 @@ header{
 .banner h1{
     color: white;
     font-size: 3.5rem;
-    font-family: "Baloo Da 2", serif;
+    font-family: var(--font-p);
     font-weight: 100;
-    text-shadow: .3rem, .4rem, 2px rgba(0, 0, 0, 0.4);
+    text-shadow: .2rem .3rem 2px rgba(0, 0, 0, 0.4);
     line-height: 3.5rem;
     margin-bottom: 1rem;
     opacity: 0;
@@ -47,10 +157,10 @@ header{
 }
 
 .banner p{
-    font-family: "Josefin Slab", serif;
+    font-family: var(--font-s);
     font-size: 2rem;
     color: white;
-    text-shadow: .3rem, .4rem, 2px rgba(0, 0, 0, 0.4);
+    text-shadow: .2rem .3rem 2px rgba(0, 0, 0, 0.4);
     margin-bottom: 1rem;
     line-height: 2.5rem;
     opacity: 0;
@@ -58,7 +168,7 @@ header{
 }
 
 .banner button{
-    font-family: "Mulish",serif;
+    font-family: var(--font-t);
     text-transform: uppercase;
     letter-spacing: .1rem;
     color: white;
