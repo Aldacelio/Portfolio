@@ -595,6 +595,9 @@ footer{
     font-size: 1.5rem;
     font-weight: 600;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-obrigado{
@@ -609,4 +612,9 @@ footer{
 .btn-obrigado:hover{
     opacity: 0.9;
     cursor: pointer;
+}
+
+.paragrafo-obrigado img{
+    width: 2rem;
+    margin-left: 0.5rem;
 }
