@@ -360,14 +360,20 @@ header {
     width: 100%;
 }
 
+.sessao-projeto{
+    width: 100vw;
+}
+
 .projeto {
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 4rem;
+    width: 100vw;
 }
 
 .card {
-    width: 18rem;
+    width: 30%;
+    max-width:18rem;
     height: 25rem;
     position: relative;
 }
@@ -679,7 +685,7 @@ footer {
 
 /*fim do deixa resposivo menu e home*/
 
-/*deixa sessão conhecimento responsiva*/
+/*deixa sessão conhecimento e projetos responsiva*/
 @media (max-width: 900px) {
 
     /*menu e home resposiva*/
@@ -715,6 +721,27 @@ footer {
 
 }
 
+@media (max-width:810px) {
+    .card-info{
+        padding: 0 2rem;
+    }
+    .card-info h2 {
+        font-size: 1.5rem;
+    }
+    
+    .card-info h3 {
+        font-size: 1.2rem;
+    }
+    
+    .card-info p {
+        font-size: 0.9rem;
+    }
+    .card-info button {
+        width: 6rem;
+        height: 2.5rem;
+    }
+}
+
 @media (max-width: 610px) {
     .conhecimento-header i {
         font-size: 2rem;
@@ -729,6 +756,27 @@ footer {
     }
     .sessao-header h1{
         font-size: 2.5rem;
+    }
+    .card{
+        height: 22rem;
+    }
+    .card-info{
+        padding: 0 0.9rem;
+    }
+    .card-info h2 {
+        font-size: 1.1rem;
+    }
+    
+    .card-info h3 {
+        font-size: 0.9rem;
+    }
+    
+    .card-info p {
+        font-size: 0.75rem;
+    }
+    .card-info button {
+        width: 5rem;
+        height: 2rem;
     }
 }
 
@@ -751,4 +799,10 @@ footer {
         font-size: 8.4vw;
     }
 }
-/*fim deixa sessão conhecimento responsiva*/
+
+@media (max-width: 375px) {
+    .card-info{
+        padding: 0 0.3rem;
+    }
+}
+/*fim deixa sessão conhecimento e projetos responsiva*/
