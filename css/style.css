@@ -523,6 +523,7 @@ header{
     width: 100%;
     height: 2rem;
     margin-top: 0.5rem;
+    cursor: pointer;
 }
 
 footer{
@@ -571,4 +572,41 @@ footer{
     color: white;
     border-radius: .3rem;
     box-shadow: 0 0.1rem 0.6rem #00000009;
+}
+
+.obrigado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #101026;
+    flex-direction: column;
+    line-height: 4rem;
+}
+
+.text-obrigado{
+    font-family: var(--font-p);
+    font-size: 3rem;
+    color: #eee;
+}
+
+.paragrafo-obrigado{
+    font-family: var(--font-s);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.btn-obrigado{
+    border: none;
+    border-radius: .5rem;
+    width: 20rem;
+    text-align: center;
+    font-family: var(--font-s);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.btn-obrigado:hover{
+    opacity: 0.9;
+    cursor: pointer;
 }
