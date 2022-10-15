@@ -20,7 +20,8 @@ html {
 }
 
 header,
-section {
+.sessao-conhecimentos,
+.sessao-contato {
     height: 100vh;
 }
 
@@ -362,6 +363,7 @@ header {
 
 .sessao-projeto {
     width: 100vw;
+    height: auto;
 }
 
 .projeto {
